@@ -13,7 +13,9 @@ const Home = () => {
       </header>
       <main>
         <section className="title">
-          <h1>Chez vous, partout et ailleurs</h1>
+          <div>
+            <h1>Chez vous, partout et ailleurs</h1>
+          </div>
         </section>
         <section className="gallery">
           <Appartements />

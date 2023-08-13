@@ -11,6 +11,8 @@
         color: $color-1;
         cursor: default;
         transition: 0.2s;
+        font-size: 24px;
+        font-weight: 500;
 
         &:hover {
           color: $color-1;
@@ -19,16 +21,10 @@
     }
 
     .nav-active {
-
-      &::after {
-        content: "";
-        text-decoration: underline;
-        height: 1px;
-        color: $color-2;
-        background-color: black;
+      text-decoration: underline;
+      color: $color-1;
       }
     }
   }
 
   
-}
