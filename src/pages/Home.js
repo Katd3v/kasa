@@ -1,6 +1,5 @@
 import React from "react";
 import Navigation from "../components/Navigation";
-import Logo from "../components/Logo";
 import Appartements from "../components/Appartements";
 import Logo_white from "../components/Logo_white";
 
@@ -8,7 +7,6 @@ const Home = () => {
   return (
     <>
       <header>
-        <Logo />
         <Navigation />
       </header>
       <main>
