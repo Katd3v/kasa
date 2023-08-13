@@ -1,9 +1,10 @@
 .title {
-  max-width: 1240px;
   height: 223px;
-  margin: 10px 100px;
   border-radius: 25px;
-  // background-color: #000;
+
+  @media screen and (max-width: 768px) {
+    height: 111px;
+  }
   
   div {
     width: 100%;
@@ -11,7 +12,6 @@
     border-radius: 25px;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
                 url("/assets/img/beach.png") center/cover;
-    // filter: brightness(70%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,14 +23,18 @@
       margin: auto;
       font-size: 48px;
       font-weight: 500;
+
+      @media screen and (max-width: 768px) {
+        font-size: 24px;
+      }
     }
+
+
   }
 
 }
 
 .gallery {
-  max-width: 1240px;
   background-color: $color-2;
-  margin: 10px 100px;
   border-radius: 25px;
 }

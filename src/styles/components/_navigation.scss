@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   ul {
     display: flex;
     justify-content: end;
@@ -18,6 +18,10 @@
         font-size: 24px;
         font-weight: 500;
 
+        @media screen and (max-width: 768px) {
+          font-size: 12px;
+        }
+
         &:hover {
           color: $color-1;
         }
@@ -29,6 +33,15 @@
       color: $color-1;
       }
     }
+
+  .logo {
+    img {
+      @media screen and (max-width: 768px) {
+        width: 145px;
+        height: 47px;
+      }
+    }
   }
+}
 
   
