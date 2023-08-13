@@ -1,14 +1,9 @@
 import React from "react";
-import Navigation from "../components/Navigation";
 import Appartements from "../components/Appartements";
-import Logo_white from "../components/Logo_white";
 
 const Home = () => {
   return (
     <>
-      <header>
-        <Navigation />
-      </header>
       <main>
         <section className="title">
           <div>
@@ -19,12 +14,6 @@ const Home = () => {
           <Appartements />
         </section>
       </main>
-      <footer>
-        <Logo_white />
-        <div>
-          <p>© 2020 Kasa. All rights reserved</p>
-        </div>
-      </footer>
     </>
   );
 };
