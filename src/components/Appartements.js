@@ -1,14 +1,25 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import Card from "./Card";
 
 const Appartements = () => {
+  const [data, setData] = useState([]);
+
   useEffect(() => {
     axios
       .get(process.env.PUBLIC_URL + "/backend/logements.json")
-      .then((res) => console.log(res.data));
+      .then((res) => setData(res.data));
   }, []);
 
-  return <div></div>;
+  return (
+    <div>
+      <ul>
+        {data.map((appartement) => (
+          <Card key={appartement.id} appartement={appartement} />
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default Appartements;

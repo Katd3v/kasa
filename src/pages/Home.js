@@ -11,9 +11,7 @@ const Home = () => {
           </h1>
         </div>
       </section>
-      <section className="gallery">
-        <Appartements />
-      </section>
+      <Appartements />
     </>
   );
 };
