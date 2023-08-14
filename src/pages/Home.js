@@ -11,7 +11,9 @@ const Home = () => {
           </h1>
         </div>
       </section>
-      <Appartements />
+      <section className="cards-appartements">
+        <Appartements />
+      </section>
     </>
   );
 };

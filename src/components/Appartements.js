@@ -12,12 +12,10 @@ const Appartements = () => {
   }, []);
 
   return (
-    <div>
-      <ul>
-        {data.map((appartement) => (
-          <Card key={appartement.id} appartement={appartement} />
-        ))}
-      </ul>
+    <div className="cards-container">
+      {data.map((appartement) => (
+        <Card key={appartement.id} appartement={appartement} />
+      ))}
     </div>
   );
 };

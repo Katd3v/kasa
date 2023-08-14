@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const Card = ({ appartement }) => {
   return (
-    <div className="card-container">
-      <NavLink className="card" to={`/appartements/${appartement.id}`}>
+    <div className="card">
+      <NavLink to={`/appartements/${appartement.id}`}>
         <img src={appartement.pictures[0]} alt={appartement.title} />
         <h2>{appartement.title}</h2>
       </NavLink>

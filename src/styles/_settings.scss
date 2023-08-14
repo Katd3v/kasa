@@ -35,3 +35,10 @@ $white: #FFFFFF;
     list-style-type: none;
   }
 
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px 50px;
+}
