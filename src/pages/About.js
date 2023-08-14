@@ -1,7 +1,13 @@
 import React from "react";
 
 const About = () => {
-  return <></>;
+  return (
+    <>
+      <section className="imageBackgroundMountain">
+        <div></div>
+      </section>
+    </>
+  );
 };
 
 export default About;

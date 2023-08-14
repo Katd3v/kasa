@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Layout from "./components/Layout";
+import PageNotFound from "./pages/PageNotFound";
 
 const App = () => {
   return (
@@ -11,8 +12,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* path="*" fonctionne si jamais l'url ne correspond à rien de déclaré au dessus */}
-          {/* <Route path="*" element={} /> Il faut renvoyer erreur 404 */}
+          {/* path="*" fonctionne si jamais l'url n'est pas retrouvé'*/}
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Layout>
     </BrowserRouter>

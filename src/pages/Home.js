@@ -4,9 +4,11 @@ import Appartements from "../components/Appartements";
 const Home = () => {
   return (
     <>
-      <section className="title">
+      <section className="imageBackgroundBeach">
         <div>
-          <h1>Chez vous, partout et ailleurs</h1>
+          <h1>
+            Chez vous, <span></span> partout et ailleurs
+          </h1>
         </div>
       </section>
       <section className="gallery">
