@@ -1,0 +1,50 @@
+.messageError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 89px 0;
+
+  @media screen and (max-width: 768px) {
+    margin: 63px 0;
+  }
+
+  .codeError {
+    color: $color-1;
+    font-size: 250px;
+    font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+      font-size: 96px;
+    }
+  }
+
+  .textError {
+    color: $color-1;
+    font-size: 36px;
+    text-align: center;
+    margin: 130px 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+      margin: 113px 0;
+    }
+  }
+
+  a {
+    color: $color-1;
+    
+    li {
+      color: $color-1;
+      font-size: 18px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+
+      &:hover {
+        color: $color-1;
+      }
+    }
+  }
+
+}
