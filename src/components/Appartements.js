@@ -2,13 +2,11 @@ import axios from "axios";
 import React, { useEffect } from "react";
 
 const Appartements = () => {
-  // useEffect(() => {
-  //   axios
-  //     .get(
-  //       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json"
-  //     )
-  //     .then((res) => console.log(res.data));
-  // }, []);
+  useEffect(() => {
+    axios
+      .get(process.env.PUBLIC_URL + "/backend/logements.json")
+      .then((res) => console.log(res.data));
+  }, []);
 
   return <div></div>;
 };
