@@ -1,19 +1,17 @@
 .imageBackgroundMountain {
   height: 223px;
   border-radius: 25px;
+  width: 100%;
+  // height: 100%;
+  border-radius: 25px;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+              url("/assets/img/mountain.png") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  div {
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                url("/assets/img/mountain.png") center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @media screen and (max-width: 768px) {
+    justify-content: start;
 
-    @media screen and (max-width: 768px) {
-      justify-content: start;
-    }
   }
 }
