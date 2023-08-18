@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Appartements from "../components/Appartements";
+import logements from "../logements.json";
 
 const Home = () => {
+  const [data, setdata] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setdata(logements);
+    setLoading(false);
+  }, []);
+  // console.log(data);
+
   return (
     <>
       <section className="imageBackgroundBeach">
@@ -12,7 +22,7 @@ const Home = () => {
         </div>
       </section>
       <section className="cards-appartements">
-        <Appartements />
+        <Appartements data={data} loading={loading} />
       </section>
     </>
   );
