@@ -16,7 +16,7 @@ const App = () => {
           {/* Ce lien dirige vers la page de détails de l'appartement avec l'id correspondant */}
           <Route path="/appartements/:id" element={<Description />} />
           {/* path="*" fonctionne si jamais l'url n'est pas retrouvé'*/}
-          {/* <Route path="*" element={<PageNotFound />} /> */}
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Layout>
     </BrowserRouter>

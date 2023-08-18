@@ -7,7 +7,7 @@ const Appartements = ({ data, loading }) => {
       {loading ? (
         <p>Chargement en cours...</p>
       ) : (
-        <div>
+        <div className="cards-container">
           {data.logements.map((appartement) => (
             <Card key={appartement.id} appartement={appartement} />
           ))}

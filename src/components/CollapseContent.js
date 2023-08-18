@@ -2,7 +2,7 @@ import React from "react";
 
 const CollapseContent = ({ type, content }) => {
   return (
-    <div>
+    <div className="about-content">
       <p>{content}</p>
     </div>
   );

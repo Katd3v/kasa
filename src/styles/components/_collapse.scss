@@ -1,0 +1,29 @@
+.about-block {
+  margin-bottom: 30px;
+
+  .about-title {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-1;
+    padding: 10px 20px 10px 15px;
+    border-radius: 5px;
+  
+    h3 {
+      color: $white;
+      font-size: 24px;
+      font-weight: 500;
+    }
+  
+    button {
+      background-color: $color-1;
+      border: none;
+    }
+  
+  }
+}
+
+
+.close {
+  display: none;
+  transition: 0.3s;
+}
