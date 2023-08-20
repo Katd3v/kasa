@@ -25,11 +25,11 @@ const Carrousel = ({ appartement }) => {
       {appartement.pictures.length > 1 && (
         <div>
           <div className="buttons">
-            <button className="button-left" onClick={handlePreviousImage}>
-              <img src="./arrow_left.png" alt="Précédent" />
+            <button onClick={handlePreviousImage}>
+              <img src="/arrow_left.png" alt="Précédent" />
             </button>
-            <button className="button-right" onClick={handleNextImage}>
-              <img src="./arrow_right.png" alt="Suivante" />
+            <button onClick={handleNextImage}>
+              <img src="/arrow_right.png" alt="Suivante" />
             </button>
           </div>
           <div>

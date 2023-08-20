@@ -13,7 +13,7 @@ const Collapse = ({ children, title }) => {
         <h3>{title}</h3>
         <button onClick={toggleCollapse}>
           <img
-            src={isOpen ? "./arrow_close.png" : "./arrow_open.png"}
+            src={isOpen ? "/arrow_close.png" : "/arrow_open.png"}
             alt={isOpen ? "flèche fermante" : "flèche ouvrante"}
           />
         </button>

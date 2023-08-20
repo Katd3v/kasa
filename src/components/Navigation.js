@@ -6,7 +6,7 @@ const Navigation = () => {
     <header>
       <div className="navigation">
         <div className="logo">
-          <img src="./LOGO.png" alt="Logo de Kasa" />
+          <img src="/LOGO.png" alt="Logo de Kasa" />
         </div>
         <ul>
           <NavLink
