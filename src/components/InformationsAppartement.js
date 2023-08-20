@@ -22,7 +22,7 @@ const InformationsAppartement = ({ appartement }) => {
       </div>
       <div>
         <div>
-          <Tags appartement={appartement} />
+          <Tags tags={appartement.tags} />
         </div>
         <div>
           <Rating rating={appartement.rating} />

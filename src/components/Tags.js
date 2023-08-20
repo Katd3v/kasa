@@ -1,10 +1,10 @@
 import React from "react";
 
-const Tags = ({ appartement }) => {
+const Tags = ({ tags }) => {
   return (
     <div>
       <ul>
-        {appartement.tags.map((tag) => (
+        {tags.map((tag) => (
           <li key={tag}>{tag}</li>
         ))}
       </ul>
