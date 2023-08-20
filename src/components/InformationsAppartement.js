@@ -2,6 +2,7 @@ import React from "react";
 import Collapse from "./Collapse";
 import CollapseContent from "./CollapseContent";
 import Tags from "./Tags";
+import Rating from "./Rating";
 
 const InformationsAppartement = ({ appartement }) => {
   return (
@@ -20,7 +21,12 @@ const InformationsAppartement = ({ appartement }) => {
         </div>
       </div>
       <div>
-        <Tags appartement={appartement} />
+        <div>
+          <Tags appartement={appartement} />
+        </div>
+        <div>
+          <Rating rating={appartement.rating} />
+        </div>
       </div>
       <div>
         <Collapse title="Description">
