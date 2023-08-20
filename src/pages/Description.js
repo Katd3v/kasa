@@ -8,6 +8,7 @@ const Description = (props) => {
   const appartement = logements.logements.filter(
     (logement) => logement.id === id
   )[0];
+
   return (
     <div>
       <Carrousel images={appartement.pictures} title={appartement.title} />
