@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 
-const Carrousel = ({ images, title }) => {
+const Carrousel = ({ appartement }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleNextImage = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === appartement.pictures.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const handlePreviousImage = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? appartement.pictures.length - 1 : prevIndex - 1
     );
   };
 
@@ -19,10 +19,10 @@ const Carrousel = ({ images, title }) => {
     <div className="gallery-carrousel">
       <img
         className="image-appartement"
-        src={images[currentImageIndex]}
-        alt={`Image de l'appartement ${title}`}
+        src={appartement.pictures[currentImageIndex]}
+        alt={`Image de l'appartement ${appartement.title}`}
       />
-      {images.length > 1 && (
+      {appartement.pictures.length > 1 && (
         <div>
           <div className="buttons">
             <button className="button-left" onClick={handlePreviousImage}>
@@ -34,7 +34,7 @@ const Carrousel = ({ images, title }) => {
           </div>
           <div>
             <span>
-              {currentImageIndex + 1}/{images.length}
+              {currentImageIndex + 1}/{appartement.pictures.length}
             </span>
           </div>
         </div>
