@@ -2,7 +2,10 @@
   background-color: $color-2;
   padding: 20px 15px;
 
-  p {
+  p, li {
     color: $color-1;
+    line-height: 26px;
+    font-size: 18px;
   }
+
 }

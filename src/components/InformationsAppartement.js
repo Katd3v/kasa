@@ -20,7 +20,7 @@ const InformationsAppartement = ({ appartement }) => {
           />
         </div>
       </div>
-      <div>
+      <div className="tag-rating">
         <div>
           <Tags tags={appartement.tags} />
         </div>

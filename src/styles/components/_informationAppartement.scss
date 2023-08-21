@@ -1,0 +1,46 @@
+.containTitleHost {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+
+  .title-appart {
+    h2 {
+      font-size: 36px;
+      font-weight: 500;
+      color: $color-1;
+    }
+    
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      color: $color-1;
+      margin-top: 8px;
+    }
+  }
+
+  .host-appart {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: 18px;
+      color: $color-1;
+      font-weight: 500;
+      max-width: 93px;
+      line-height: 26px;
+    }
+
+    img {
+      border-radius: 50%;
+      object-fit: cover;
+      width: 64px;
+      height: 64px;
+    }
+  }
+}
+
+.tag-rating {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}

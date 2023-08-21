@@ -2,7 +2,7 @@ import React from "react";
 
 const CollapseContent = ({ type, content }) => {
   return type === "liste" ? (
-    <ul>
+    <ul className="about-content">
       {content.map((equipement) => (
         <li key={equipement}>{equipement}</li>
       ))}

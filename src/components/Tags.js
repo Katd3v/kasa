@@ -3,9 +3,11 @@ import React from "react";
 const Tags = ({ tags }) => {
   return (
     <div>
-      <ul>
+      <ul className="tag-contain">
         {tags.map((tag) => (
-          <li key={tag}>{tag}</li>
+          <li className="tag" key={tag}>
+            {tag}
+          </li>
         ))}
       </ul>
     </div>
