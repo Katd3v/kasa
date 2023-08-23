@@ -8,17 +8,20 @@ const Collapse = ({ children, title }) => {
   };
 
   return (
-    <div className="about-block">
+    <div className={`about-block ${isOpen ? "open" : ""}`}>
       <div className="about-title">
         <h3>{title}</h3>
         <button onClick={toggleCollapse}>
           <img
-            src={isOpen ? "/arrow_close.png" : "/arrow_open.png"}
+            className={`arrow ${isOpen ? "open" : ""}`}
+            src="/arrow_open.png"
             alt={isOpen ? "flèche fermante" : "flèche ouvrante"}
           />
         </button>
       </div>
-      <div className={`${isOpen ? "open" : "close"}`}>{children}</div>
+      <div className={`${isOpen ? "openContain" : "closeContain"}`}>
+        {children}
+      </div>
     </div>
   );
 };
