@@ -27,24 +27,35 @@
       }
     }
   } 
+  // .collapse-container {
+  //   overflow: hidden;
+  //   // &.openCollapse {
+  //   //   transition: 0.5s ease-in-out;
+  //   //   max-height: 500px;
+  //   // }
+
+  //   .collapse-content {
+  //     visibility: hidden;
+  //     opacity: 0;
+  //     transform: translateY(-100%);
+  //     transition:  visibility 0.5s, opacity 0.5s linear, transform 0.5s ease;
+  //     &.openContain {
+  //       visibility: visible;
+  //       opacity: 1;
+  //       transform: translateY(0);
+  //       transition:  visibility 0.5s, opacity 0.5s linear, transform 0,5s ease;
+  //     }
+  //   }
+  // }
+
+
   .collapse-container {
     overflow: hidden;
-    // &.openCollapse {
-    //   transition: 0.5s ease-in-out;
-    //   max-height: 500px;
-    // }
-
-    .collapse-content {
-      visibility: hidden;
-      opacity: 0;
-      transform: translateY(-100%);
-      transition:  visibility 0.5s, opacity 0.5s linear, transform 0.5s ease;
-      &.openContain {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
-        transition:  visibility 0.5s, opacity 0.5s linear, transform 0,5s ease;
-      }
-    }
+    max-height: 0;
+    transition: max-height 0.9s ease-in;
+  }
+  .openCollapse {
+    max-height: 500px;
+    transition: max-height 0.9s ease-in;
   }
 }
