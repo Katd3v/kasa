@@ -28,7 +28,7 @@ const InformationsAppartement = ({ appartement }) => {
           <Rating rating={appartement.rating} />
         </div>
       </div>
-      <div>
+      <div className="info-collapse">
         <Collapse title="Description">
           <CollapseContent
             type="description"

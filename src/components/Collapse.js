@@ -19,8 +19,10 @@ const Collapse = ({ children, title }) => {
           />
         </button>
       </div>
-      <div className={`${isOpen ? "openContain" : "closeContain"}`}>
-        {children}
+      <div className="collapse-container">
+        <div className={`collapse-content ${isOpen ? "openContain" : ""}`}>
+          {children}
+        </div>
       </div>
     </div>
   );

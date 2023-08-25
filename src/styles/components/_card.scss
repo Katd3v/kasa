@@ -5,6 +5,18 @@
   border-radius: 10px;
   position: relative;
 
+  @media screen and (max-width: 768px) {
+   width: 300px;
+   height: 280px;
+   margin-bottom: 20px;
+  }
+
+   @media screen and (max-width: 370px) {
+    width: 280px;
+    height: 200px;
+   }
+
+
   a {
     text-decoration: none;
     position: absolute;
