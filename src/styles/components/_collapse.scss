@@ -45,10 +45,10 @@
   .collapse-container {
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.5s ease-out;
+    transition: max-height 0.9s ease;
   }
   .openCollapse {
     max-height: 500px;
-    transition: max-height 0.9s ease-out;
+    transition: max-height 0.9s ease-in-out;
   }
 }

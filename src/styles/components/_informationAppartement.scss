@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 645px) {
     display: block;
   }
 
@@ -43,7 +43,7 @@
     flex-direction: column;
     justify-content: space-around;
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 645px) {
       flex-direction: row-reverse;
       justify-content: space-between;
     }
@@ -64,6 +64,7 @@
           font-size: 12px;
           line-height: 17px;
           text-align: right;
+          width: 60px;
         }
       }
   
@@ -86,14 +87,22 @@
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 860px) {
     flex-direction: column;
   }
 
   .about-block {
     width: 580px;
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 1370px) {
+      width: 500px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: 400px;
+    }
+
+    @media screen and (max-width: 860px) {
       width: 100%;
     }
   }

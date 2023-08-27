@@ -10,7 +10,6 @@ const Home = () => {
     setdata(logements);
     setLoading(false);
   }, []);
-  // console.log(data);
 
   return (
     <>
