@@ -1,7 +1,7 @@
 import React from "react";
 import Carrousel from "../components/Carrousel";
 import logements from "../logements.json";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import InformationsAppartement from "../components/InformationsAppartement";
 
 const Description = () => {
@@ -10,11 +10,13 @@ const Description = () => {
     (logement) => logement.id === id
   )[0];
 
-  return (
+  return appartement !== undefined ? (
     <div>
       <Carrousel appartement={appartement} />
       <InformationsAppartement appartement={appartement} />
     </div>
+  ) : (
+    <Navigate to="/404" />
   );
 };
 

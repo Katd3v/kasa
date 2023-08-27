@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Layout from "./components/Layout";
@@ -15,8 +15,9 @@ const App = () => {
           <Route path="/about" element={<About />} />
           {/* Ce lien dirige vers la page de détails de l'appartement avec l'id correspondant */}
           <Route path="/appartements/:id" element={<Description />} />
+          <Route path="/404" element={<PageNotFound />} />
           {/* path="*" fonctionne si jamais l'url n'est pas retrouvé'*/}
-          <Route path="*" element={<PageNotFound />} />
+          <Route path="*" element={<Navigate to="/404" />} />
         </Routes>
       </Layout>
     </BrowserRouter>
