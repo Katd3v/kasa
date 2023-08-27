@@ -12,7 +12,7 @@ const Rating = ({ rating }) => {
     stars.push(<img key={rating + i} src="/star-gray.png" alt="Étoile vide" />);
   }
 
-  return <div>{stars}</div>;
+  return <div className="rating">{stars}</div>;
 };
 
 export default Rating;

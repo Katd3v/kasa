@@ -1,22 +1,36 @@
 .about-block {
   margin-bottom: 30px;
 
+  @media screen and (max-width: 450px) {
+    margin-bottom: 20px;;
+  }
+
   .about-title {
     display: flex;
     justify-content: space-between;
     background-color: $color-1;
     padding: 10px 20px 10px 15px;
     border-radius: 5px;
+
+    @media screen and (max-width: 450px) {
+      padding: 0;
+    }
   
     h3 {
       color: $white;
       font-size: 24px;
       font-weight: 500;
+
+      @media screen and (max-width: 450px) {
+        font-size: 13px;
+        margin: auto 10px;
+      }
     }
   
     button {
       background-color: $color-1;
       border: none;
+      border-radius: 5px;
 
       .arrow {
         transition: transform 0.4s ease-in-out;

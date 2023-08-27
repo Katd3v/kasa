@@ -15,5 +15,11 @@
     border-radius: 10px;
     text-align: center;
     line-height: 20px;
+
+    @media screen and (max-width: 450px) {
+      width: 84px;
+      font-size: 10px;
+      margin-right: 10px;
+    }
   }
 }
