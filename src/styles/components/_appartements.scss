@@ -8,19 +8,16 @@
 
   @media screen and (max-width: 1024px) {
    padding: 30px 0 0;
-   margin: 30px 0 30px;
+   margin: 30px 0;
   }
-
   @media screen and (max-width: 768px) {
    padding: 20px 0 0;
    margin: 20px 0 0; 
   }
-
   @media screen and (max-width: 450px) {
     padding: 0;
     margin: 22px 0 0; 
    }
-
 }
 
 .cards-container div:last-child {
