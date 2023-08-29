@@ -32,18 +32,10 @@
 
   a {
     color: $color-1;
+    font-size: 18px;
     
-    li {
-      color: $color-1;
-      font-size: 18px;
-
-      @media screen and (max-width: 768px) {
-        font-size: 14px;
-      }
-
-      &:hover {
-        color: $color-1;
-      }
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
     }
   }
 }
