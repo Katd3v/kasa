@@ -18,6 +18,13 @@
     }
   }
 
+  p {
+    margin: 0;
+    @media screen and (max-width: 768px) {
+      margin: 48px auto;
+    }
+  }
+
   .textError {
     color: $color-1;
     font-size: 36px;
