@@ -14,14 +14,14 @@
    padding: 20px 0 0;
    margin: 20px 0 0; 
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 375px) {
     padding: 0;
     margin: 22px 0 0; 
    }
 }
 
 .cards-container div:last-child {
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 375px) {
     margin-bottom: 0;
   }
 }

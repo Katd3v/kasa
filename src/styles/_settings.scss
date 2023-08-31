@@ -6,19 +6,25 @@ $white: #FFFFFF;
 
 * {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+
+html, body {
+  height: 100%;
 
   body {
     background: $white;
     max-width: 1600px;
     margin: 0 auto;
-
+  
     #root {
       width: 100%;
       min-height: 100vh;
-
+      display: flex;
+      flex-direction: column;
+  
       header {
         margin: 40px 100px 0;
     
@@ -33,6 +39,7 @@ $white: #FFFFFF;
     
       main {
         padding: 50px 100px;
+        flex: 1;
     
         @media screen and (max-width: 1024px) {
           padding: 30px 30px;
@@ -49,6 +56,5 @@ $white: #FFFFFF;
   
     }
   }
-
-
+}  
 
