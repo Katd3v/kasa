@@ -1,4 +1,33 @@
-# Getting Started with Create React App
+# Projet 5 - Application Web de Location Immobilière avec React
+
+Bienvenue sur le repository de mon projet 5 dans le cadre de ma formation développeur web avec Openclassrooms, où j'ai développé une application web de location immobilière en utilisant React. Ce projet a été réalisé dans le but de moderniser le site de Kasa en utilisant les dernières technologies web.
+
+## Objectif du Projet
+
+L'objectif principal de ce projet était de créer une application web interactive et responsive pour la location immobilière, en utilisant React comme framework front-end. Voici quelques points clés du projet :
+
+- Utilisation de Create React App pour initialiser rapidement une application React.
+- Mise en place du design avec Sass pour gérer les styles.
+- Développement de composants React modulaires pour une meilleure maintenance.
+- Intégration de fonctionnalités de navigation entre les pages avec React Router.
+- Implémentation d'animations CSS pour améliorer l'expérience utilisateur.
+
+## Compétences Acquises
+
+En travaillant sur ce projet, j'ai acquis un certain nombre de compétences essentielles en développement web, notamment :
+
+- Développement d'éléments de l'interface d'un site web à l'aide de composants React.
+- Initialisation d'une application React avec Create React App.
+- Utilisation de Sass pour gérer les styles et l'apparence du site.
+- Configuration de la navigation entre les différentes pages de l'application avec React Router.
+
+---
+
+Merci d'avoir visité le repository de mon projet 5. J'ai travaillé dur pour créer cette application web moderne en utilisant React, et j'espère qu'elle vous plaira.
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
