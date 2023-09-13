@@ -1,6 +1,6 @@
 # Projet 6 - Application Web de Location Immobilière avec React
 
-Bienvenue sur le repository de mon projet 5 dans le cadre de ma formation développeur web avec Openclassrooms, où j'ai développé une application web de location immobilière en utilisant React. Ce projet a été réalisé dans le but de moderniser le site de Kasa en utilisant les dernières technologies web.
+Bienvenue sur le repository de mon projet 6 dans le cadre de ma formation développeur web avec Openclassrooms, où j'ai développé une application web de location immobilière en utilisant React. Ce projet a été réalisé dans le but de moderniser le site de Kasa en utilisant les dernières technologies web.
 
 ## Objectif du Projet
 
